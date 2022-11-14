@@ -1,0 +1,43 @@
+a {
+  color: $black;
+  text-decoration: none;
+
+  &:visited {
+    color: $black;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $black;
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+.site-info a {
+  text-decoration: none;
+  color: $black;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+// Hover for the Header, Homepage, Contact section
+.site-header a:hover,
+.home a:hover,
+.contact-social-icons a:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+}

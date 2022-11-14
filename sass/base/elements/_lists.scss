@@ -1,0 +1,41 @@
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  margin: 0 0 2rem;
+  padding: 0 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  // width: 30rem;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+li {
+  color: $gray;
+  border: 2px solid $gray;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
