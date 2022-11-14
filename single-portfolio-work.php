@@ -141,7 +141,6 @@ get_header();
 
 					if (get_field('mockup_img') || get_field('mockup_link')) {
 						?>
-						<!-- ----------------------------------- -->
 						<!-- Display Heading: mockup -->
 						<div class="single-work-step">
 							<h2><?php esc_html_e( 'Mockup', 'michiko-portfolio' ); ?></h2>
