@@ -56,13 +56,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .contact-wrapper svg {
     fill: $yellow;
     height: 2.5rem;
     width: 2.5rem;
+    margin-right: 0;
   }
 
   @media screen and (min-width: 50em) {
