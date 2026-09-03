@@ -47,34 +47,44 @@ get_header();
 
 				<!-- Discpaly links -->
 				<div class="link">
-				<?php
-				// Display link to GitHub
-				if (get_field('git')) {
-					$gitLink = get_field('git');
-					if($gitLink){
-						$git_url = $gitLink['url'];
-						$git_title = $gitLink['title'];
-						$git_target = $gitLink['target'] ? $gitLink['target'] : '_self';
-					?>
-					<a href="<?php echo esc_url($git_url); ?>"target="<?php echo esc_attr($github_target); ?>"><?php esc_html_e( 'GitHub', 'michiko-portfolio' ); ?></a>
 					<?php
+					// Display link to GitHub
+					if (get_field('git')) {
+						$gitLink = get_field('git');
+						if($gitLink){
+							$git_url = $gitLink['url'];
+							$git_title = $gitLink['title'];
+							$git_target = $gitLink['target'] ? $gitLink['target'] : '_self';
+						?>
+						<a href="<?php echo esc_url($git_url); ?>"target="<?php echo esc_attr($github_target); ?>"><?php esc_html_e( 'GitHub', 'michiko-portfolio' ); ?></a>
+						<?php
+						}
 					}
-				}
-				// Display link to Live site
-				if (get_field('live')) {
+					// Display link to Live site
+					if (get_field('live')) {
+						?>
+						<a  href="<?php echo esc_url($live_url); ?>"target="<?php echo esc_attr($live_target); ?>"><?php esc_html_e( 'Live Site', 'michiko-portfolio' ); ?></a>
+						<?php
+					}
 					?>
-					<a  href="<?php echo esc_url($live_url); ?>"target="<?php echo esc_attr($live_target); ?>"><?php esc_html_e( 'Live Site', 'michiko-portfolio' ); ?></a>
-					<?php
-				}
-				?>
 				</div>
 
-				<div class="process-reflection">
+				<div class="about-container">
+					<?php 
+					if (function_exists ( 'get_field')) {
+						if (get_field('about')) { 
+							the_field('about'); 
+						}
+					}  ?>
+				</div>
+				
+
+				<!-- <div class="process-reflection">
 					<h2 class="process-header"><?php esc_html_e( 'Process', 'michiko-portfolio' ); ?></h2>
 					<h2 class="reflection-header"><?php esc_html_e( 'What I learned', 'michiko-portfolio' ); ?></h2>
-				</div>
+				</div> -->
 
-				<div class="process">
+				<!-- <div class="process">
 					<?php 
 					// Display Discriptions
 					if (function_exists ( 'get_field')) {
@@ -83,9 +93,9 @@ get_header();
 						<?php
 						}
 						} ?>
-				</div>
+				</div> -->
 
-				<div class="reflection hide">
+				<!-- <div class="reflection hide">
 					<?php 
 					// Display Reflection
 					if (function_exists ( 'get_field')) {
@@ -94,7 +104,7 @@ get_header();
 						<?php
 						}
 						} ?>
-				</div>
+				</div> -->
 			</section>
 
 

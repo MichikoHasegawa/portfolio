@@ -48,38 +48,38 @@ $(document).ready(function () {
 });
 
 // Single Page
-const reflectionHeader = document.querySelector(".reflection-header");
-const processHeader = document.querySelector(".process-header");
-const reflection = document.querySelector(".reflection");
-const process = document.querySelector(".process");
+// const reflectionHeader = document.querySelector(".reflection-header");
+// const processHeader = document.querySelector(".process-header");
+// const reflection = document.querySelector(".reflection");
+// const process = document.querySelector(".process");
 
-processHeader.addEventListener("click", function () {
-  reflection.classList.add("hide");
-  process.classList.remove("hide");
-  reflectionHeader.style.border = "none";
-  reflectionHeader.style.backgroundColor = "unset";
-  processHeader.style.backgroundColor = "#ffd72f";
-  reflectionHeader.style.borderBottom = "2px solid #ffd72f";
-  reflectionHeader.style.color = "#888888";
-  processHeader.style.color = "#575757";
-});
+// processHeader.addEventListener("click", function () {
+//   reflection.classList.add("hide");
+//   process.classList.remove("hide");
+//   reflectionHeader.style.border = "none";
+//   reflectionHeader.style.backgroundColor = "unset";
+//   processHeader.style.backgroundColor = "#ffd72f";
+//   reflectionHeader.style.borderBottom = "2px solid #ffd72f";
+//   reflectionHeader.style.color = "#888888";
+//   processHeader.style.color = "#575757";
+// });
 
-reflectionHeader.addEventListener("click", function () {
-  reflection.classList.remove("hide");
-  process.classList.add("hide");
-  processHeader.style.border = "none";
-  processHeader.style.backgroundColor = "unset";
-  reflectionHeader.style.backgroundColor = "#ffd72f";
-  processHeader.style.borderBottom = "2px solid #ffd72f";
-  processHeader.style.color = "#888888";
-  reflectionHeader.style.color = "#575757";
-  console.log("clicked!");
-});
+// reflectionHeader.addEventListener("click", function () {
+//   reflection.classList.remove("hide");
+//   process.classList.add("hide");
+//   processHeader.style.border = "none";
+//   processHeader.style.backgroundColor = "unset";
+//   reflectionHeader.style.backgroundColor = "#ffd72f";
+//   processHeader.style.borderBottom = "2px solid #ffd72f";
+//   processHeader.style.color = "#888888";
+//   reflectionHeader.style.color = "#575757";
+//   console.log("clicked!");
+// });
 
-processHeader.addEventListener("mouseover", function () {
-  processHeader.style.color = "#575757";
-});
+// processHeader.addEventListener("mouseover", function () {
+//   processHeader.style.color = "#575757";
+// });
 
-reflectionHeader.addEventListener("mouseover", function () {
-  reflectionHeader.style.color = "#575757";
-});
+// reflectionHeader.addEventListener("mouseover", function () {
+//   reflectionHeader.style.color = "#575757";
+// });

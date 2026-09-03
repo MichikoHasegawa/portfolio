@@ -76,6 +76,27 @@
 
 .menu-main-menu-container {
   text-align: center;
+
+  ul.nav-menu {
+    justify-content: space-between;
+    gap: 0rem;
+    max-width: 400px;
+    margin: auto;
+    padding: 0;
+    @media screen and (min-width: 50em) {
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    li {
+      svg {
+        margin: 0;
+        @media screen and (min-width: 50em) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
 }
 
 .main-navigation ul {
