@@ -411,26 +411,32 @@ h6 {
 
 h1 {
 	margin: 0;
-	font-size: 2.5rem;
+	font-size: 38px;
 	padding: 2rem 0 0;
 	text-align: center;
 }
 
 h2 {
-	font-size: 1.8rem;
+	font-size: 32px;
 	text-align: center;
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: 30px;
 	text-align: center;
 	margin-top: 2rem auto 3rem;
 }
 
 @media screen and (min-width: 50em) {
 	h1 {
-		font-size: 3rem;
+		font-size: 60px;
 		margin-top: 4rem;
+	}
+	h2 {
+		font-size: 50px;
+	}
+	h3 {
+		font-size: 40px;
 	}
 }
 p {
@@ -1152,12 +1158,16 @@ svg {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	padding: 40px 16px 0;
 }
 .post-type-archive-portfolio-work .work:nth-child(even) {
 	background-color: #fdfbe8;
 }
 .post-type-archive-portfolio-work .work-img {
-	padding: 0 1rem;
+	max-width: 460px;
+	max-height: 230px;
+	padding: 0;
+	margin-bottom: 30px;
 }
 .post-type-archive-portfolio-work .work-content {
 	display: flex;
@@ -1168,14 +1178,17 @@ svg {
 	margin: 0 0 3rem;
 	min-width: 20rem;
 }
-.post-type-archive-portfolio-work h2 {
-	margin-top: 0;
+.post-type-archive-portfolio-work .work-content .work-description {
+	margin-bottom: 30px;
+}
+.post-type-archive-portfolio-work h3 {
+	margin: 0 0 20px;
 }
 .post-type-archive-portfolio-work .size-work-archive-img {
 	margin: 3rem 0 1rem;
 }
 .post-type-archive-portfolio-work .work-description {
-	text-align: center;
+	padding: 0;
 }
 .post-type-archive-portfolio-work .details {
 	font-weight: 700;
@@ -1207,23 +1220,25 @@ svg {
 	.post-type-archive-portfolio-work .works {
 		padding-top: 1.8rem;
 		gap: 5rem;
+		margin-left: 50px;
 	}
 }
-@media screen and (min-width: 83em) {
+@media screen and (min-width: 84em) {
 	.post-type-archive-portfolio-work .work {
 		flex-direction: row;
-		gap: 3rem;
+		gap: 4rem;
 		padding: 2rem 5rem;
 		border-radius: 20px;
 		width: unset;
 		max-width: 80rem;
+		margin-left: 0;
 	}
 	.post-type-archive-portfolio-work .size-work-archive-img {
 		margin-top: 0;
 	}
 	.post-type-archive-portfolio-work .work-content {
 		margin-bottom: 0;
-		width: 24rem;
+		width: 28rem;
 	}
 	.post-type-archive-portfolio-work .work-tools {
 		width: 20rem;

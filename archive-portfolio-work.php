@@ -39,13 +39,13 @@ get_header();
 					<section class="work">
 						<!-- Display the Image -->
 						<div class="work-img">
-							<?php the_post_thumbnail('work-archive-img'); ?>
+							<?php the_post_thumbnail('full'); ?>
 						</div>
 						<?php 
 						//Display the title
 						?>
 						<div class="work-content">
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h2>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
 							<?php
 
 							// Dsplay discription ?>

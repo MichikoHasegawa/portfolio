@@ -10,26 +10,33 @@ h6 {
 
 h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 38px;
   padding: 2rem 0 0;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 32px;
   text-align: center;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 30px;
   text-align: center;
   margin-top: 2rem auto 3rem;
 }
 
 @media screen and (min-width: 50em) {
   h1 {
-    font-size: 3rem;
+    font-size: 60px;
     margin-top: 4rem;
-    // padding: 8rem 0 2rem;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 40px;
   }
 }
