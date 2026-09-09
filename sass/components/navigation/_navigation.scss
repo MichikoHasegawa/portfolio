@@ -115,20 +115,38 @@
 
   .nav-links {
     display: flex;
+    justify-content: space-between;
     margin: 0 1rem;
+    max-width: 900px;
+    padding: 0 16px;
+    margin: 0 auto;
   }
 
-  .nav-previous {
-    flex: 1 0 50%;
-  }
-
+  .nav-previous,
   .nav-next {
-    text-align: end;
-    flex: 1 0 50%;
-  }
+    a {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      max-width: 150px;
+      @media (min-width: 800px) {
+        max-width: unset;
+      }
 
-  .nav-title {
-    border-bottom: 2px solid $yellow;
+      .nav-subtitle {
+        font-weight: 900;
+      }
+
+      .nav-title {
+        border-bottom: 2px solid $yellow;
+        &:active,
+        &:focus,
+        &:hover {
+          border-color: $red;
+          transition-duration: 0.5s;
+        }
+      }
+    }
   }
 }
 

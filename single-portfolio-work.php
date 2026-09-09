@@ -63,7 +63,10 @@ get_header();
 					// Display link to Live site
 					if (get_field('live')) {
 						?>
-						<a  href="<?php echo esc_url($live_url); ?>"target="<?php echo esc_attr($live_target); ?>"><?php esc_html_e( 'Live Site', 'michiko-portfolio' ); ?></a>
+						<a  href="<?php echo esc_url($live_url); ?>"target="<?php echo esc_attr($live_target); ?>">
+							<?php esc_html_e( 'Click here to view ', 'michiko-portfolio' ); ?> 
+							<span class="site-title"><?php the_title() ?></span>
+						</a>
 						<?php
 					}
 					?>

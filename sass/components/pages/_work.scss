@@ -125,12 +125,29 @@
     margin-bottom: 2.8rem;
   }
 
+  h3 {
+    margin: 40px 0 20px;
+  }
+
+  h4 {
+    text-align: left;
+    margin: 30px 0 10px;
+  }
+
+  p {
+    line-height: 24px;
+    margin-bottom: 15px !important;
+    padding: 0;
+  }
+
   .single-work-descriotion {
     margin-bottom: 50px;
 
     .work-single-img {
       padding: 0.5rem;
+      margin-bottom: 20px;
     }
+
     img {
       display: block;
       margin: 0 auto 1rem;
@@ -138,28 +155,48 @@
 
     .tools {
       gap: 0.5rem;
+      max-width: 550px;
+      margin: 0 auto 60px;
     }
     .link {
       text-align: center;
-      margin-bottom: 2rem;
+      padding: 0 16px;
+      margin-bottom: 60px;
       a {
         font-weight: 700;
         border-bottom: 2px solid $red;
+        &:active,
+        &:focus,
+        &:hover {
+          color: $red;
+          border-bottom: 2px solid $yellow;
+          transition: 0.2s ease-in-out;
+        }
+        &:nth-of-type(even) {
+          margin-left: 1rem;
+        }
+
+        .site-title {
+          font-family: BioRhyme;
+          font-size: 20px;
+          font-weight: 900;
+        }
       }
 
-      a:hover {
-        color: $red;
-        font-weight: 500;
-        border-bottom: 2px solid $yellow;
-        transition: 0.2s ease-in-out;
-      }
-      a:nth-of-type(even) {
-        margin-left: 1rem;
-      }
+      // a:hover {
+
+      // }
+      // a
     }
 
     .about-container {
-      ul {
+      max-width: 770px;
+      padding: 0 16px;
+      margin: 0 auto;
+
+      h2,
+      h3,
+      h3 ul {
         li {
           border: none;
           a {
@@ -179,6 +216,7 @@
     }
 
     p {
+      max-width: unset;
       margin-bottom: 2rem;
     }
 
