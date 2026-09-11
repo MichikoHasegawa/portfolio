@@ -182,11 +182,6 @@
           font-weight: 900;
         }
       }
-
-      // a:hover {
-
-      // }
-      // a
     }
 
     .about-container {
@@ -209,6 +204,20 @@
             &:focus,
             &:hover {
               text-decoration-color: $yellow;
+            }
+          }
+        }
+      }
+
+      ul {
+        gap: 12px 10px;
+        li {
+          background-color: $light-yellow;
+          &:has(a) {
+            &:active,
+            &:focus,
+            &:hover {
+              border-color: $red;
             }
           }
         }

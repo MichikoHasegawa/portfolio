@@ -644,7 +644,7 @@ img {
 	max-width: 100%;
 	display: block;
 	border-radius: 10px;
-	border: 1px solid #888888;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 figure {
@@ -908,6 +908,7 @@ textarea {
 .posts-navigation .nav-next a .nav-title,
 .post-navigation .nav-previous a .nav-title,
 .post-navigation .nav-next a .nav-title {
+	font-weight: 900;
 	border-bottom: 2px solid #ffd72f;
 }
 .comment-navigation .nav-previous a .nav-title:active, .comment-navigation .nav-previous a .nav-title:focus, .comment-navigation .nav-previous a .nav-title:hover,
@@ -1422,6 +1423,15 @@ svg {
 	-webkit-text-decoration-color: #ffd72f;
 	        text-decoration-color: #ffd72f;
 }
+.single-portfolio-work .single-work-descriotion .about-container ul {
+	gap: 12px 10px;
+}
+.single-portfolio-work .single-work-descriotion .about-container ul li {
+	background-color: #fdfbe8;
+}
+.single-portfolio-work .single-work-descriotion .about-container ul li:has(a):active, .single-portfolio-work .single-work-descriotion .about-container ul li:has(a):focus, .single-portfolio-work .single-work-descriotion .about-container ul li:has(a):hover {
+	border-color: #ee4926;
+}
 .single-portfolio-work .single-work-descriotion p {
 	max-width: unset;
 	margin-bottom: 2rem;
@@ -1555,7 +1565,6 @@ svg {
 .page-id-47 .contact-wrapper .contact-btn:hover {
 	background-color: #ee4926;
 	color: #fff;
-	border: 2px solid #ffd72f;
 	transition: all 0.2s ease-in-out;
 }
 .archive .contact-wrapper .contact-social-icons,
