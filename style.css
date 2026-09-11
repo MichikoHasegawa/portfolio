@@ -1563,8 +1563,7 @@ svg {
 .archive .contact-wrapper .contact-btn:hover,
 .single .contact-wrapper .contact-btn:hover,
 .page-id-47 .contact-wrapper .contact-btn:hover {
-	background-color: #ee4926;
-	color: #fff;
+	border-color: #ee4926;
 	transition: all 0.2s ease-in-out;
 }
 .archive .contact-wrapper .contact-social-icons,
