@@ -1,14 +1,10 @@
 .page-id-47 {
   .about-description {
     // max-width: 30rem;
-    padding: 2rem 1rem;
-    margin: 3rem auto 5rem;
+    padding: 0 1rem;
+    margin: 3rem auto;
     // border-top: 1px solid $black;
     // border-bottom: 1px solid $black;
-  }
-
-  h2 {
-    // margin-bottom: 2rem;
   }
 
   .about-tools {
@@ -18,6 +14,7 @@
   .tool-list {
     max-width: 30rem;
     margin: auto auto 5rem auto;
+    gap: 10px 15px;
   }
 
   @media screen and (min-width: 50em) {

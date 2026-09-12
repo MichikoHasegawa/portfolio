@@ -1500,8 +1500,8 @@ svg {
 /* About Part
 --------------------------------------------- */
 .page-id-47 .about-description {
-	padding: 2rem 1rem;
-	margin: 3rem auto 5rem;
+	padding: 0 1rem;
+	margin: 3rem auto;
 }
 .page-id-47 .about-tools {
 	margin-bottom: 8rem;
@@ -1509,6 +1509,7 @@ svg {
 .page-id-47 .tool-list {
 	max-width: 30rem;
 	margin: auto auto 5rem auto;
+	gap: 10px 15px;
 }
 @media screen and (min-width: 50em) {
 	.page-id-47 .about-tools {

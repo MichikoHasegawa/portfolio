@@ -51,7 +51,7 @@ get_header();
 					<div class="about-description"><?PHP
 
 					if(get_field('about_me_description')) {
-						echo '<p>'.get_field('about_me_description'). '</p>';
+						echo get_field('about_me_description');
 					};
 
 					if(get_field('about_me_description2')) {
