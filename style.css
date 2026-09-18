@@ -1264,6 +1264,11 @@ svg {
 	padding: 0;
 	margin-bottom: 30px;
 }
+@media screen and (min-width: 84em) {
+	.post-type-archive-portfolio-work .work-img {
+		margin-bottom: 0;
+	}
+}
 .post-type-archive-portfolio-work .work-content {
 	display: flex;
 	flex-wrap: wrap;

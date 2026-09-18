@@ -26,6 +26,9 @@
     max-height: 230px;
     padding: 0;
     margin-bottom: 30px;
+    @media screen and (min-width: 84em) {
+      margin-bottom: 0;
+    }
   }
 
   .work-content {
