@@ -39,7 +39,7 @@ var wordflick = function () {
         offset--;
       }
     }
-    $(".home-content p").text(part);
+    $(".content-container p").text(part);
   }, speed);
 };
 

@@ -12,50 +12,40 @@
  * @package Michiko_Portfolio
  */
 
+
+// Exit if accessed directly.
+defined('ABSPATH') || exit;
+
+
 get_header();
 ?>
 
 	<main id="primary" class="site-main">
 
 		<?php
-		while ( have_posts() ) :
-			the_post();
 
-			// get_template_part( 'template-parts/content', 'page' );
-		?>	
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<div class="entry-content">
-				<div class="home-title">
+		while ( have_posts() ) {
+			the_post(); ?>	
+
+			<div class="home-page">
+				<div class="title-container">
 					<h1 class="home-h1">
 						<?php the_title(); ?>
 					</h1>
 				</div>
-				<div class="home-content">
+				<div class="content-container">
 					<?php
+
 					the_content();
-				
-					wp_link_pages(
-						array(
-							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'michiko-portfolio' ),
-							'after'  => '</div>',
-						)
-					);
 					
 					get_template_part( 'template-parts/content', 'socialicons' ); ?>
+
 				</div>
-			</div><!-- .entry-content -->
-		</article><!-- #post-<?php the_ID(); ?> -->
+			</div>
 
-
-			<?php
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-	</main><!-- #main -->
+		<?php
+		} ?>
+	</main>
 <?php
+
 get_footer();

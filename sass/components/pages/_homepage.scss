@@ -1,105 +1,106 @@
 .home {
-  .entry-content {
-    margin: 0;
-  }
-
-  h1 {
-    background-color: $red;
-    color: $white;
-    text-align: center;
-    padding: 8rem 1rem;
-  }
-
-  p {
-    height: 5rem;
-    font-weight: 500;
-    text-align: center;
-    margin: 3rem auto;
-  }
-
-  .wp-block-button__link {
-    background-color: $light-yellow;
-    color: $red;
-    font-weight: 600;
-    border: 2px solid $red;
-    padding: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 3rem;
-    moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    box-shadow: 0 2px 15px 0 $yellow;
-  }
-
-  .wp-block-button__link:hover,
-  .wp-block-button__link:focus {
-    transform: scale(1);
-    color: $red;
-    moz-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
-    -webkit-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
-    color: $white;
-    background: linear-gradient(90deg, $red, $yellow);
-  }
-
-  .wp-block-buttons {
-    display: flex;
-    justify-content: center;
-  }
-
-  .contact-wrapper {
-    flex-direction: row;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .contact-wrapper svg {
-    fill: $yellow;
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-right: 0;
-  }
-
-  @media screen and (min-width: 50em) {
-    .entry-content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+  .site-main {
+    @media screen and (min-width: 1200px) {
+      padding-left: 60px;
     }
 
-    .home-title {
-      background-color: $red;
-    }
-    .home-title,
-    .home-content {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .home-content p {
-      font-size: 1.4rem;
-    }
-
-    .contact-wrapper {
+    .home-page {
       margin: 0;
-    }
+      @media screen and (min-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
 
-    .site-footer {
-      display: none;
+      .title-container,
+      .content-container {
+        @media screen and (min-width: 800px) {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .title-container {
+        background-color: $red;
+        padding: 130px 16px;
+        @media screen and (min-width: 800px) {
+          padding: 0 16px;
+        }
+
+        h1 {
+          color: $white;
+          text-align: center;
+        }
+      }
+
+      .content-container {
+        padding: 0 16px;
+
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          text-align: center;
+          height: 100px;
+          margin: 50px auto;
+          @media screen and (min-width: 1000px) {
+            font-size: 24px;
+          }
+        }
+
+        .wp-block-buttons {
+          display: flex;
+          justify-content: center;
+
+          .wp-block-button__link {
+            background-color: $light-yellow;
+            color: $red;
+            font-weight: 600;
+            border: 2px solid $red;
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+            box-shadow: 0 2px 15px 0 $yellow;
+            &:active,
+            &:focus,
+            &:hover {
+              transform: scale(1);
+              color: $red;
+              moz-transition: all 0.8s ease-in-out;
+              -o-transition: all 0.8s ease-in-out;
+              -webkit-transition: all 0.8s ease-in-out;
+              transition: all 0.8s ease-in-out;
+              color: $white;
+              background: linear-gradient(90deg, $red, $yellow);
+            }
+          }
+        }
+      }
+
+      .contact-wrapper {
+        flex-direction: row;
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        svg {
+          fill: $yellow;
+          height: 2.5rem;
+          width: 2.5rem;
+          margin-right: 0;
+        }
+      }
     }
   }
-
-  @media screen and (min-width: 75em) {
-    .site-main {
-      padding-left: 4rem;
-    }
+  .site-footer {
+    display: none;
   }
 }
