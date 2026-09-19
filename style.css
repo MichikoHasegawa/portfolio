@@ -1181,7 +1181,7 @@ svg {
 }
 @media screen and (min-width: 800px) {
 	.home .site-main .home-page .title-container {
-		padding: 0 16px;
+		padding: 0 40px;
 	}
 }
 .home .site-main .home-page .title-container h1 {
