@@ -841,6 +841,9 @@ textarea {
 		gap: 2rem;
 	}
 }
+.menu-main-menu-container ul.nav-menu li:nth-child(2) {
+	padding-left: 35px;
+}
 .menu-main-menu-container ul.nav-menu li svg {
 	margin: 0;
 }
@@ -984,6 +987,9 @@ body {
 	}
 	.menu-main-menu-container ul li:first-child {
 		margin-left: 1rem;
+	}
+	.menu-main-menu-container ul li:nth-child(2) {
+		padding-left: 8px !important;
 	}
 	.site-footer {
 		grid-column: 1/-1;
