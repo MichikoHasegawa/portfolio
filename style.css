@@ -1292,7 +1292,6 @@ svg {
 }
 .post-type-archive-portfolio-work .work:nth-child(even) {
 	background-color: #fdfbe8;
-	background-color: purple;
 }
 .post-type-archive-portfolio-work .work-img {
 	max-width: 460px;
